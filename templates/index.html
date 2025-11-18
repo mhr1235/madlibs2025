@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Mad Libs Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+
+<h1>Create Your Mad Lib Story</h1>
+
+<h2>Mad Lib Generator</h2>
+
+<form action="/madlib" method="post">
+    <p>Noun: <input type="text" name="noun"></p>
+    <p>Verb: <input type="text" name="verb"></p>
+    <p>Adjective: <input type="text" name="adj"></p>
+    <button type="submit">Create Story</button>
+</form>
+
+
+</body>
+</html>
+

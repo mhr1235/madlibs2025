@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Your Mad Lib Story</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+    <h1>Your Mad Lib Story</h1>
+
+    <p>
+        Once upon a time, a very <strong>{{ adj }}</strong> 
+        <strong>{{ noun }}</strong> decided to <strong>{{ verb }}</strong>
+        all the way to New York University.
+    </p>
+
+    <img src="{{ url_for('static', filename='madlibs/' ~ image) }}"
+         alt="MadLib Image"
+         width="400">
+
+    <p><a href="/">Make another!</a></p>
+
+</body>
+</html>
+
+
